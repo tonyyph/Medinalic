@@ -2,24 +2,38 @@
   "expo": {
     "name": "Medinalic",
     "slug": "Medinalic",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/app-icon.png",
+    "scheme": "medinalic",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#469C98"
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.anonymous.Medinalic",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "we want to use camera",
+        "NSMicrophoneUsageDescription": "we want to use microphone",
+        "CADisableMinimumFrameDurationOnPhone": true
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "associatedDomains": [
+        "applinks:medinalic.app",
+        "applinks:medinalic.dev"
+      ]
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/app-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.Medinalic"
     },
     "web": {
       "bundler": "metro",
